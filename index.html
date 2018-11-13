@@ -3,17 +3,7 @@
         <title>hakem</title>
 
         <style>
-            @media screen and (min-width: 601px) {
-                div.top-container {
-                    font-size: 1vm;
-                }
-            }
-
-            @media screen and (max-width: 600px) {
-                div.top-container {
-                    font-size: 3vw;
-                }
-            }
+            
 
             .top-container {
                 display: flex;
@@ -46,39 +36,38 @@
                 display: flex;
                 -ms-flex-wrap: wrap; /* IE10 */
                 flex-wrap: wrap;
-                padding: 0 4px;
-                margin: auto;
-            }
+                width: 100%;
 
-            /* Create four equal columns that sits next to each other */
-            .column {
-                margin: auto;
-                -ms-flex: 30%; /* IE10 */
-                flex: 30%;
-                max-width: 30%;
-                padding: 0 4px;
             }
 
             .column img {
                 margin-top: 8px;
                 vertical-align: middle;
             }
+            
 
-            /* Responsive layout - makes a two column-layout instead of four columns */
-            @media screen and (max-width: 800px) {
+            @media screen and (min-width: 601px) {
+                div.top-container {
+                    font-size: 1vm;
+                }
                 .column {
-                    -ms-flex: 45%;
-                    flex: 45%;
-                    max-width: 45%;
+                    -ms-flex: 48%;
+                    flex: 48%;
+                    max-width: 48%;
+                    padding: 0px 4px 0px 4px;
                 }
             }
 
             /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
             @media screen and (max-width: 600px) {
+                div.top-container {
+                    font-size: 3vw;
+                }
                 .column {
                     -ms-flex: 100%;
                     flex: 100%;
                     max-width: 100%;
+                    padding: auto;
                 }
             }
 
@@ -119,27 +108,17 @@
 
         </div>
 
-        <div class="row"> 
+        <div class="row">
             <div class="column">
+                <img src="images/AIW11.PNG" style="width:100%">
+                <img src="images/AIW8.PNG" style="width:100%">
                 <img src="images/AIW2.PNG" style="width:100%">
-                <img src="images/AIW3.PNG" style="width:100%">
-                <img src="images/AIW4.PNG" style="width:100%">
-                <img src="images/AIW5.PNG" style="width:100%">
-              
             </div>
             <div class="column">
                 <img src="images/AIW9.PNG" style="width:100%">
                 <img src="images/AIW10.PNG" style="width:100%">
-                <img src="images/AIW11.PNG" style="width:100%">
-            </div>  
-            <div class="column">
-                <img src="images/AIW6.PNG" style="width:100%">
                 <img src="images/AIW7.PNG" style="width:100%">
-                <img src="images/AIW8.PNG" style="width:100%">
-            </div>
-          </div>
-
-
-        <div ></div>
+            </div>  
+        </div>
     </body>
 </html>
