@@ -3,30 +3,25 @@
         <title>hakem</title>
 
         <style>
-            a:link, a:visited{
-                color: black;
+            
+            .floatnav a:link, a:visited{
+                color: white;
                 text-decoration: none;
             }
-            a:hover, a:active{
+            .floatnav a:hover, a:active{
                 color: #aaaaaa;
                 text-decoration: none;
             }
+            
+            
 
-            .top-container {
-                display: flex;
-                flex-wrap: wrap;
-                /*grid-template-columns: auto auto auto;*/
-                /*background-color: #2196F3;*/
-                padding: 10px 30px 10px;
-                /*border: 1px solid black;*/
-            }
-            .top-container > div {
-                
-                flex: 1 1 100px;
-            }
             .round-text{
-                border: 2px solid black; border-radius: 10rem; padding: 0 1.5rem 0 1.5rem;
+                border: 5px solid black; 
+                border-radius: 10rem; 
+                padding: 0 1.5rem 0 1.5rem;
+                background-color: black;
             }
+
             .banner-container{
                 
                 height: 300px;
@@ -51,6 +46,32 @@
                 margin-top: 8px;
                 vertical-align: middle;
             }
+
+            #top-left-float{
+                position:fixed;
+                top: 0px;
+                left: 0px;
+            }
+
+            #top-right-float{
+                position:fixed;
+                top: 0px;
+                right: 0px;
+            }
+
+            #bottom-left-float{
+                position:fixed;
+                bottom: 0px;
+                left: 0px;
+            }
+
+            #bottom-right-float{
+                position:fixed;
+                bottom: 0px;
+                right: 0px;
+            }
+
+
             
 
             @media screen and (min-width: 601px) {
@@ -79,7 +100,7 @@
             }
 
             div {
-                border: 1px solid white;
+                /*border: 1px solid red;*/
             }
            
 
@@ -88,10 +109,21 @@
 
     </head>
     <body>
-        
-        <div class="top-container">
-            <div align="left"><h1><a href="index.html">hakem, </a></h1></div>
-            <div align="right"><h1><span class="round-text"><a href="">. . .</a></span></h1></div>
+
+        <div class="floatnav" id="top-left-float">
+            <h1><span class="round-text"><a href="" title="Pasade!">!</a></span></h1>
+        </div>
+
+        <div class="floatnav" id="top-right-float">
+            <h1><span class="round-text"><a href="" title="Who?">?</a></span></h1>
+        </div>
+
+        <div class="floatnav" id="bottom-left-float">
+            <h1><span class="round-text"><a href="" title="Copyrights">2018</a></span></h1>
+        </div>
+
+        <div class="floatnav" id="bottom-right-float">
+            <h1><span class="round-text"><a href="" title="Instagram">#</a></span></h1>
         </div>
 
         <div class="banner-container">
