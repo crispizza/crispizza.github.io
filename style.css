@@ -1,0 +1,103 @@
+
+.floatnav a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+.floatnav a:hover, a:active{
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+#top-left-float{
+    position:fixed;
+    top: 0.5vw;
+    left: 0.5vw;
+}
+
+#top-right-float{
+    position:fixed;
+    top: 0.5vw;
+    right: 0.5vw;
+}
+
+#bottom-left-float{
+    position:fixed;
+    bottom: 0.5vw;
+    left: 0.5vw;
+}
+
+#bottom-right-float{
+    position:fixed;
+    bottom: 0.5vw;
+    right: 0.5vw;
+}
+
+.banner-container{
+    
+    height: 300px;
+    
+}
+.content-container{
+    flex: 1 1 100px;
+    margin: auto;
+    display: inline-block;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 601px) {
+    
+    .column {
+        -ms-flex: 48%;
+        flex: 48%;
+        max-width: 48%;
+        padding: 0px 4px 0px 4px;
+    }
+
+        
+    .round-text{
+        font-size: 60px;
+        /*border: 1vw solid black; */
+        border-radius: 10rem; 
+        padding: 0 1.5rem 0 1.5rem;
+        background-color: red;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        padding: auto;
+    }
+        
+    .round-text{
+        font-size: 8vw;
+        /*border: 1vw solid black; */
+        border-radius: 10rem; 
+        padding: 0 1.5rem 0 1.5rem;
+        background-color: red;
+    }
+}
+
+/*
+div {
+    border: 1px solid red;
+}
+*/
