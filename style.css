@@ -1,17 +1,35 @@
-
-.floatnav a:link, a:visited{
+a:link, a:visited, a:active{
     color: black;
     text-decoration: none;
 }
-.floatnav a:active{
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/*
+a.floatnav:link, a.floatnav:visited{
+    color: white;
+    text-decoration: none;
+}
+a.floatnav:active, a.floatnav:hover{
     color: #aaaaaa;
     text-decoration: none;
 }
 
-.floatnav a:hover{
-    color: #aaaaaa;
+
+a.work:link, a.work:visited, a.work:active{
+    color: black;
     text-decoration: none;
 }
+
+a.work:hover{
+    color: black;
+    text-decoration: underline;
+}
+*/
+
 
 #top-left-float{
     position:fixed;
@@ -72,14 +90,21 @@
         padding: 0px 4px 0px 4px;
     }
 
-        
+
     .round-text{
         font-size: 60px;
-        /*border: 1vw solid black; */
+    }
+
+    /*
+    .round-text{
+        
+        border: 1vw solid black; 
         border-radius: 10rem; 
         padding: 0 1.5rem 0 1.5rem;
         background-color: red;
+        
     }
+    */
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -91,14 +116,22 @@
         max-width: 100%;
         padding: auto;
     }
-        
+
+    
     .round-text{
-        font-size: 8vw;
-        /*border: 1vw solid black; */
+        font-size: 10vw;
+    }
+
+    /*  
+    .round-text{
+        
+        border: 1vw solid black; 
         border-radius: 10rem; 
         padding: 0 1.5rem 0 1.5rem;
         background-color: red;
+        
     }
+    */
 }
 
 /*
