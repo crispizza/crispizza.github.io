@@ -13,7 +13,7 @@ a.floatnav:link, a.floatnav:visited{
     text-decoration: none;
 }
 a.floatnav:active, a.floatnav:hover{
-    color: #aaaaaa;
+    color: #999999;
     text-decoration: none;
 }
 
@@ -151,9 +151,6 @@ a.work:hover{
     
     
 }
-
-
-
 
 /*
 div {
