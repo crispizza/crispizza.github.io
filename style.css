@@ -1,12 +1,21 @@
+/* CUSTOM CURSOR*/
+html{
+    cursor:url(cursor3.png) , auto;
+}
+
 /* Hyperlink Atrb */
 a:link, a:visited, a:active{
     color: black;
     text-decoration: none;
+    cursor:url(cursor3.png) , auto;
+    
 }
 
 a:hover{
     color: black;
     text-decoration: underline;
+    cursor:url(cursor3.png) , auto;
+    
 }
 
 a.floatnav:link, a.floatnav:visited{
@@ -191,7 +200,7 @@ div.desc {
 }
 
 .responsive {
-    padding: 2vw 2vw;
+    padding: 2vw 2vw 2vw 2vw;
     float: left;
     height: auto;
 }
@@ -205,6 +214,13 @@ div.desc {
 @media only screen and (max-width: 600px) {
     .responsive {
         
-        width: 95%;
+        width: 100%;
     }
+}
+
+/*CENTER DIV*/
+
+div.center{
+    vertical-align: center;
+    text-align: center;
 }
