@@ -1,10 +1,10 @@
 /* ANIMATIONS */
 @keyframes walkInOut{
     0%{
-        transform: translate(-200px,0px);
+        transform: translate(-20%,0%);
     }
     100%{
-        transform: translate(2200px,1000px);
+        transform: translate(500%,100%);
     }
 }
 
