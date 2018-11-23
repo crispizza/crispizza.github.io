@@ -1,84 +1,67 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <!-- TITLE -->
-        <title>AliceInWonderland</title>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!-- menu load -->
+        <script> 
+            $(function(){
+                $("#header").load("header.html");
+                }); 
+        </script> 
 
-        <!-- Block Pinch-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-
-        <!-- Favicon --> <!--https://www.favicon-generator.org/-->
-        <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-        <link rel="manifest" href="icons/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
     </head>
 
     <body>
         
-        <!-- Navigations -->
-        <div class="floatnav" id="top-left-float">
-            <h1><span class="round-text"><a class="floatnav" href="index.html" title="Pasade!">!</a></span></h1>
-        </div>
+        <div id="header"></div>
 
-        <div class="floatnav" id="top-right-float">
-            <h1><span class="round-text"><a class="floatnav" href="works.html" title="Who?">?</a></span></h1>
-        </div>
+        <!-- Contents Start Below-->
+
+
+        
+
+        <p class="title">
+            Lost in Wonderland 2018
+        </p>
+
+        <p class="content">
+            Unreal Engine(Blueprint)<br>
+            3D Art Editor(Blender, Adobe Fuse)<br>
+            3D Animation (Mixamo)<br>
+            Sound Editor(Adobe Audition, Ableton Live)<br>
+            <br>
+            Thanks To<br>
+            Dahee Jeong, 3D Model Artist
+        </p>
         
         <!--
-        <div class="floatnav" id="bottom-left-float">
-            <h1><span class="round-text"><a title="Copyrights">L</a></span></h1>
-        </div>
-
-        <div class="floatnav" id="bottom-right-float">
-            <h1><span class="round-text"><a title="Instagram">R</a></span></h1>
-        </div> 
-        -->
-        
-        <div class="content-container">
-            <p class="title">Lost in Wonderland</p>
-            <p class="content">
-                Unreal Engine(Blueprint)<br>
-                3D Art Editor(Blender, Adobe Fuse)<br>
-                3D Animation (Mixamo)<br>
-                Sound Editor(Adobe Audition, Ableton Live)<br>
-                <br>
-                Thanks To<br>
-                Dahee Jung, 3D Model Artist</p>
-        </div>
-
         <div class="VideoContainer">
-                <iframe class="VideoMax" src="https://www.youtube.com/embed/Rxd984BZZw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="VideoMax" src="https://www.youtube.com/embed/Rxd984BZZw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        -->
 
-
-        <div class="row">
-            <div class="column">
-                <img src="images/LIW/AIW11.PNG" style="width:100%">
-                <img src="images/LIW/AIW8.PNG" style="width:100%">
-                <img src="images/LIW/AIW2.PNG" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="images/LIW/AIW9.PNG" style="width:100%">
-                <img src="images/LIW/AIW10.PNG" style="width:100%">
-                <img src="images/LIW/AIW7.PNG" style="width:100%">
-            </div>  
-        </div>
+        <div class="responsive"><div class="gallery">
+            <img src="images/LIW/AIW11.PNG" >
+        </div></div>
+        <div class="responsive"><div class="gallery">
+            <img src="images/LIW/AIW8.PNG" >
+        </div></div>
+        <div class="responsive"><div class="gallery">
+            <img src="images/LIW/AIW2.PNG" >
+        </div></div>
+        <div class="responsive"><div class="gallery">
+            <img src="images/LIW/AIW9.PNG" >
+        </div></div>
+        <div class="responsive"><div class="gallery">
+            <img src="images/LIW/AIW10.PNG" >
+        </div></div>
+        <div class="responsive"><div class="gallery">
+            <img src="images/LIW/AIW7.PNG" >
+        </div></div>
     
     </body>
 </html>
