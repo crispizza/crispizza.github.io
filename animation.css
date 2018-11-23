@@ -1,0 +1,32 @@
+/* ANIMATIONS */
+@keyframes walkInOut{
+    0%{
+        transform: translate(-200px,0px);
+    }
+    100%{
+        transform: translate(2200px,1000px);
+    }
+}
+
+
+#catwalk{
+    animation-name: walkInOut;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    position: fixed;
+    z-index: 100;
+    width:20%;
+    
+    border: 5px dotted blue;
+}
+
+
+/* debug */
+div{
+    border: 5px dotted red;
+}
