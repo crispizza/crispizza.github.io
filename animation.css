@@ -1,20 +1,24 @@
 /* ANIMATIONS */
 @keyframes walkInOut{
     0%{
-        transform: translate(-50%,80%);
+        left:-40%;
+        top:30%;
     }
     100%{
-        transform: translate(150%,20%);
+        left:140%;
+        top:0%;
+        ;
     }
 }
-
-
-#chasingAnimation{
+#catwalk{
     animation-name: walkInOut;
-    animation-duration: 30s;
-    animation-delay: 0s;
+    animation-duration: 20s;
+    animation-delay: 3s;
     animation-direction: normal;
     animation-fill-mode: both;
     animation-iteration-count: unset;
     
+    position: fixed;
+    z-index: 100;
+    width:20%;
 }
