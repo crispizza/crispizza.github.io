@@ -50,12 +50,14 @@ a.work:hover{
     position:fixed;
     top: 0.5vw;
     left: 0.5vw;
+    z-index: 300;
 }
 
 #top-right-float{
     position:fixed;
     top: 0.5vw;
-    right: 0.5vw;
+    right: 0.5vw;    
+    z-index: 300;
 }
 
 #bottom-left-float{
