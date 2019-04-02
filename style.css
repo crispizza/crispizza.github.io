@@ -11,12 +11,6 @@ html
     color: #fff;
 }
 
-/* FONT FACE */
-@font-face { font-family: 'WONBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/WONBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'NIXGONL-Vb'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'silgothic'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/silgothic.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'BBTreeGL'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGL.woff') format('woff'); font-weight: normal; font-style: normal; }
-
 /* Hyperlink Atrb */
 a:link, a:visited, a:active
 {
@@ -82,20 +76,14 @@ a.work:hover
 
 p
 {
-    font-size: 1.2em;
-    font-family: 'BBTreeGL';
-    line-height: normal;
-    padding: 13px;
+    font-family: 'Noto Serif KR';
     text-align: justify;
 }
 
-h1
+h1, h2, h3
 {
-    font-size: 3em;
-    line-height: 0.9em;
-    font-family: 'WONBatang';
+    font-family: 'Noto Sans KR';
 }
-
 
 .round-text
 {
@@ -110,15 +98,7 @@ h1
     filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
-.title
-{
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-}
-
 /* work content*/
-
 .container
 {
     display: flex;
@@ -141,11 +121,6 @@ h1
     width: 100%;
     height: auto;
 }
-
-
-
-/* Responsive */
-/* 1200-4, 768-2, 320-1*/
 
 
 /* PC col4*/

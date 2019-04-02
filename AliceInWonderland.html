@@ -8,6 +8,7 @@
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css">        
         <link rel="stylesheet" type="text/css" href="animation.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Noto+Serif+KR:400,500,600,700,900&amp;subset=korean" rel="stylesheet">
 
         <!-- Favicon --> <!--https://www.favicon-generator.org/-->
         <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
@@ -71,30 +72,24 @@
         <div class="container">
 
             <div class="col">
-                <p>
-                    <img id="figure" src="images\AIW\2018-11-19 18.29.51.png" >
-                </p>
-
-                <div class="title" >
-                        Alice In Wonderland 2017
-                    </div>
-
-
-                <p>
-                <span style="font-size:24px">게임 소개</span>
-                <br>플랫폼 : Windows (32bit)
-                <br>장르 : 아이소메트릭 뷰 호러 어드벤쳐
-                <br>시놉시스 : 정신을 차리고 보니 학교 건물에 갇힌 엘리스. 흰 토끼를 피하며 단서를 찾아 탈출해야한다.
-                <br>씬 구성 : 타이틀, 오프닝, 인게임, 컷씬 이벤트, 엔딩
+                <p><img id="figure" src="images\AIW\2018-11-19 18.29.51.png" ></p>
                 
-                </p>
+                <h1>Alice In Wonderland 2017</h1>
+
+                
+                <h3>게임 소개</h3>
                 <p>
-                <span style="font-size:24px">제작 환경</span>
-                <br>Visual Studio(C, WinAPI, OpenVG, Direct Sound)
+                플랫폼 : Windows (32bit)<br>
+                장르 : 아이소메트릭 뷰 호러 어드벤쳐<br>
+                시놉시스 : 정신을 차리고 보니 학교 건물에 갇힌 엘리스. 흰 토끼를 피하며 단서를 찾아 탈출해야한다.<br>
+                씬 구성 : 타이틀, 오프닝, 인게임, 컷씬 이벤트, 엔딩
+                </p>
+                <h3>제작 환경</h3>
+                <p>
+                Visual Studio(C, WinAPI, OpenVG, Direct Sound)
                 <br>Pixel Art Editor(Aseprite, Photoshop)
                 <br>Sound Editor(Adobe Audition, Ableton Live)
                 </p>
-
                 <p>
                 대학교 게임프로그래밍 수업 과정에서 
                 기말과제로 제출한 개인프로젝트였습니다. 
@@ -106,14 +101,18 @@
             <div class="col">
                 
                 
-                <p><span style="font-size:24px">알고리즘 기술</span>
-                <br>이 프로젝트를 통해 게임의 기본적인 구조를 배웠습니다. 
-                openGL기반의 egl-api로 쉽게 그래픽을 구현할 수 있었고, 
+                <h3>알고리즘 기술</h3>
+                <p>
+                이 프로젝트를 통해 게임의 기본적인 구조를 배웠습니다. 
+                openGL 기반의 egl-api로 쉽게 그래픽을 구현할 수 있었고, 
                 directSound를 통해 사운드를 재생할 수 있었습니다.
-                <br><br>
+                </p>    
+            </p>
+                <p>
                 프로그램 창이 생성될때 변수를 생성 및 초기화를 했습니다.
                 매 프레임 마다 애니메이션, 사운드, AI 관련 연산을 수행했습니다.
-                <br><br>
+                </p>
+                <p>
                 키보드 입력을 받아 엘리스의 위치를 연산했고, 
                 직선, 원의 방정식을 활용해 콜라이더를 구현하여, 
                 움직임을 제한하거나 상호작용, 다른 이벤트를 호출했습니다.
