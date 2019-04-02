@@ -151,7 +151,7 @@ h1
 /* PC col4*/
 .col
 {
-    max-width: 22%;
+    max-width: 23.3%;
     padding: 10px;
 }
 
@@ -168,7 +168,7 @@ h1
         
     .col
     {
-        max-width: 45%;
+        max-width: 22%;
         padding: 10px;
     }
 
@@ -182,7 +182,7 @@ h1
 
 
 /* MOBILE */
-@media screen and (max-width: 600px)
+@media screen and (max-width: 768px)
 {
     
     .col
