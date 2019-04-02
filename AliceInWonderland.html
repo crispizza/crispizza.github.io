@@ -65,10 +65,10 @@
 
         <!-- Contents Start Below -->
 
-        <!-- Animation -->
-        <div style="position: absolute; width:100%; height:100%"><img id="catwalk" src="images/rabbitwalk.gif"></div>        
-        <div tyle="position: absolute; width:100%, height:100%"><img id="catwalk" src="images/alicewalk.gif" style="transform: scale(0.5) translate(130%,20%)"></div>
-
+        <!-- Animation  -->
+        <div ><img id="catwalk" src="images/rabbitwalk.gif"></div>        
+        <div ><img id="catwalk" src="images/alicewalk.gif" style="transform: scale(0.5) translate(130%,20%)"></div>
+        
         <div class="container">
 
             <div class="col">
@@ -100,8 +100,10 @@
 
             <div class="col">
                 
+                <h3>게임 플레이</h3>
+                <iframe id="figure" height="280px" src="https://www.youtube.com/embed/jZcKa6BGwCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
-                <h3>알고리즘 기술</h3>
+                <h3>알고리즘</h3>
                 <p>
                 이 프로젝트를 통해 게임의 기본적인 구조를 배웠습니다. 
                 openGL 기반의 egl-api로 쉽게 그래픽을 구현할 수 있었고, 
@@ -127,11 +129,26 @@
             </div>
 
             <div class="col">
+            <h3>코드 소개</h3>
             <p>
-            
-            </p>
+<pre>
+void timerProc();
+void input();
+void draw();
+void drawAlice();
+void drawRabbit();
+void drawBG();
+void colCheckDoor(int x, int y, int mapA, int mapB, int direction, int key);
+void aliceMover(int upLine, int downLine, int leftLine, int rightLine);
+void blocker(int x, int y);
 
-            
+void rabbitChasing(int upLine, int downLine, int leftLine, int rightLine);
+void attack();
+void bloodyScreen();
+void textUI();
+void interactObj(int x, int y, int event, int direction);
+</pre>
+            </p>
             <p><img id="figure" alt="" src="images\AIW\2018-11-19 18.33.19.png" ></p>
             <p><img id="figure" alt="" src="images\AIW\2018-11-19 18.34.13.png" ></p>
             <p><img id="figure" alt="" src="images\AIW\2018-11-19 18.33.36.png" ></p>
