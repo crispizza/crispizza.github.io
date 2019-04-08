@@ -85,6 +85,19 @@ h1, h2, h3
     font-family: 'Noto Sans KR';
 }
 
+.WorkName
+{
+    font-family: 'Noto Serif KR';
+    padding-top:0px;
+    margin-top:0px;
+    font-size:3.5vw;
+}
+
+#code
+{
+    white-space: pre-wrap; /* pre tag내에 word wrap */
+}
+
 .round-text
 {
     font-size: 60px;
@@ -117,6 +130,11 @@ h1, h2, h3
 
 /* Image */
 #figure
+{
+    width: 100%;
+}
+
+#gallery
 {
     width: 100%;
 }

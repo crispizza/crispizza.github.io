@@ -94,6 +94,9 @@
                 대학교 게임프로그래밍 수업 과정에서 
                 기말과제로 제출한 개인프로젝트였습니다. 
                 당시에는 C언어에 대한 능숙함이 없어서 기본지식을 활용해 반복적으로 제작했습니다.
+                이 프로젝트를 통해 게임의 기본적인 구조를 배웠습니다. 
+                openGL 기반의 egl-api로 쉽게 그래픽을 구현할 수 있었고, 
+                directSound를 통해 사운드를 재생할 수 있었습니다.
                 </p>
                 
             </div>
@@ -104,12 +107,6 @@
                 <iframe id="figure" height="280px" src="https://www.youtube.com/embed/jZcKa6BGwCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
                 <h3>알고리즘</h3>
-                <p>
-                이 프로젝트를 통해 게임의 기본적인 구조를 배웠습니다. 
-                openGL 기반의 egl-api로 쉽게 그래픽을 구현할 수 있었고, 
-                directSound를 통해 사운드를 재생할 수 있었습니다.
-                </p>    
-            </p>
                 <p>
                 프로그램 창이 생성될때 변수를 생성 및 초기화를 했습니다.
                 매 프레임 마다 애니메이션, 사운드, AI 관련 연산을 수행했습니다.
@@ -130,24 +127,53 @@
 
             <div class="col">
             <h3>코드 소개</h3>
-            <p>
-<pre>
+            <p style="text-align:unset;">
+
+<pre id="code">
 void timerProc();
+// 유니티의 update()나 언리얼의 tick()처럼 프레임당 연산하는 함수
+
 void input();
+// 인풋 이벤트를 관리하는 함수
+
 void draw();
+// timerProc에서 프레임당 호출하게되는 최종적으로 그림을 출력하는 함수
+
 void drawAlice();
+// 앨리스를 그리는 함수
+
 void drawRabbit();
+// 토끼를 그리는 함수
+
 void drawBG();
+// 배경 및 인터랙티브 오브젝트를 그리는 함수
+
 void colCheckDoor(int x, int y, int mapA, int mapB, int direction, int key);
-void aliceMover(int upLine, int downLine, int leftLine, int rightLine);
+// 문의 콜라이더 정보를 체크하는 함수
+
 void blocker(int x, int y);
+// 블록 콜라이더를 체크하는 함수
+
+void aliceMover(int upLine, int downLine, int leftLine, int rightLine);
+// 앨리스를 움직이는 함수
 
 void rabbitChasing(int upLine, int downLine, int leftLine, int rightLine);
+// 토끼를 움직이는 함수
+
 void attack();
+// 토끼가 앨리스를 공격하는 함수
+
 void bloodyScreen();
+// 앨리스가 데미지를 받았을때 화면에 피가 그려지는 함수
+
 void textUI();
+// 텍스트 UI를 출력하는 함수
+
 void interactObj(int x, int y, int event, int direction);
+// 아이템들의 정보를 체크하는 함수
+
 </pre>
+
             </p>
             <p><img id="figure" alt="" src="images\AIW\2018-11-19 18.33.19.png" ></p>
             <p><img id="figure" alt="" src="images\AIW\2018-11-19 18.34.13.png" ></p>
@@ -155,8 +181,10 @@ void interactObj(int x, int y, int event, int direction);
             </div>
 
             <div class="col">
+            <h3>아쉬운 점</h3>
             <p>
-               
+            글로벌 변수로 관리되어 보안적인 면과, 함수 인수에 대한 직관성이 떨어짐,
+            8방향 미지원, 더 크고 효율적으로 배치된 맵, 지능적인 AI 시스템.
             </p>
 
             
