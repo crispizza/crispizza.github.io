@@ -90,13 +90,33 @@
                 <br>Pixel Art Editor(Aseprite, Photoshop)
                 <br>Sound Editor(Adobe Audition, Ableton Live)
                 </p>
+                
+                <h3>세부 설명</h3>
+                
                 <p>
-                대학교 게임프로그래밍 수업 과정에서 
-                기말과제로 제출한 개인프로젝트였습니다. 
+                대학교 게임프로그래밍 수업 과정에서 기말과제로 제출한 개인프로젝트였습니다.
+                처음으로 제작한 게임이었고 2285줄 짜리 C언어코드를 작성했습니다.
                 당시에는 C언어에 대한 능숙함이 없어서 기본지식을 활용해 반복적으로 제작했습니다.
                 이 프로젝트를 통해 게임의 기본적인 구조를 배웠습니다. 
+                </p>
+
+                <p>
                 openGL 기반의 egl-api로 쉽게 그래픽을 구현할 수 있었고, 
                 directSound를 통해 사운드를 재생할 수 있었습니다.
+                </p>
+                <p>
+                프로그램 창이 생성될때 변수를 생성 및 초기화를 했습니다.
+                매 프레임 마다 애니메이션, 사운드, AI 관련 연산을 수행했습니다.
+                </p>
+        
+                <p>
+                키보드 입력을 받아 엘리스의 움직임을 연산했고, 
+                배경과 캐릭터의 좌표를 카메라의 좌표로 역연산하여 카메라가 따라가는 것처럼 연출했습니다.
+                </p>
+                <p>
+                오브젝트들과의 인터렉션을 위하여 여러 방정식을 이용해 연산했습니다.
+                직선, 원의 방정식을 활용해 콜라이더를 구현하여, 
+                움직임을 제한하거나 상호작용, 다른 이벤트를 호출했습니다.
                 </p>
                 
             </div>
@@ -106,16 +126,6 @@
                 <h3>게임 플레이</h3>
                 <iframe id="figure" height="280px" src="https://www.youtube.com/embed/jZcKa6BGwCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
-                <h3>알고리즘</h3>
-                <p>
-                프로그램 창이 생성될때 변수를 생성 및 초기화를 했습니다.
-                매 프레임 마다 애니메이션, 사운드, AI 관련 연산을 수행했습니다.
-                </p>
-                <p>
-                키보드 입력을 받아 엘리스의 위치를 연산했고, 
-                직선, 원의 방정식을 활용해 콜라이더를 구현하여, 
-                움직임을 제한하거나 상호작용, 다른 이벤트를 호출했습니다.
-                </p>
 
 
                 <p><img id="figure" alt="막다른 길 앞에 선 엘리스" src="images\AIW\2018-11-19 18.30.16.png" ></p>
@@ -126,7 +136,7 @@
             </div>
 
             <div class="col">
-            <h3>코드 소개</h3>
+            <h3>함수 코드 개요</h3>
             <p style="text-align:unset;">
 
 <pre id="code">
@@ -183,9 +193,12 @@ void interactObj(int x, int y, int event, int direction);
             <div class="col">
             <h3>아쉬운 점</h3>
             <p>
-            글로벌 변수로 관리되어 보안적인 면과, 함수 인수에 대한 직관성이 떨어짐,
-            8방향 미지원, 더 크고 효율적으로 배치된 맵, 지능적인 AI 시스템.
-            </p>
+            C언어 기반으로 작성되어 아쉬운점이 많습니다. 객체 지향언어로 작성되지 않아 유지보수가 힘들었습니다. 
+            개인프로젝트였기때문에 감당할 수 있었지만, 팀프로젝트였으면 커뮤니케이션이 힘들었을 것입니다.
+            대부분이 글로벌 변수와 #define으로 관리되어 보안적인 면과, 함수 인수에 대한 직관성이 떨어집니다.
+            8방향 움직임을 지원하면 보다 사용자에게 쉬운 인터페이스를 제공할 수 있었을텐데 isometric 4방향은 조작이 힘든 편이었습니다.
+            맵도 더 크고 효율적으로 배치되었다면 좋았을 뻔 했습니다. 난이도가 너무 높았습니다. 
+            자료 구조에 대한 이해도의 부족과 시간의 부족으로 토끼 AI를 좀 더 자연스럽게 구현하지 못한것이 아쉽습니다.</p>
 
             
             <p><img id="figure" alt="" src="images\AIW\2018-11-19 18.33.41.png" ></p>
@@ -198,51 +211,6 @@ void interactObj(int x, int y, int event, int direction);
             
             </div>
         </div>
-        
-        <!--
-        
-
-
-        <div class="responsive"><div class="gallery">
-            
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-
-        <div class="responsive"><div class="gallery">
-            <img src="" >
-        </div></div>
-        -->
 
     </body>
 </html>
