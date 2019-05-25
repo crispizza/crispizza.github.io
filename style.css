@@ -190,7 +190,6 @@ h1, h2, h3
         margin-right: -900px;
         z-index: 300;
     }
-
     
     .WorkName
     {
@@ -204,7 +203,13 @@ h1, h2, h3
 /* TABLET col2*/
 @media screen and (max-width: 1200px)
 {
-        
+    .wrap
+    {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+    }
+
     .col
     {
         max-width: 22%;
@@ -231,13 +236,18 @@ h1, h2, h3
 /* MOBILE */
 @media screen and (max-width: 768px)
 {
+    .wrap
+    {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+    }
     
     .col
     {
         max-width: 100%;
         padding: 10px;
     }
-
     
     .work
     {
