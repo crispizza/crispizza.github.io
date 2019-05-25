@@ -4,6 +4,16 @@ html
     cursor:url(cursor3.png) , auto;
 }
 
+/**/
+.wrap
+{
+    top: 50%;
+    left: 50%;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* CUSTOM HTML */
 #BlackTheme
 {
@@ -85,14 +95,6 @@ h1, h2, h3
     font-family: 'Noto Sans KR';
 }
 
-.WorkName
-{
-    font-family: 'Noto Serif KR';
-    padding-top:0px;
-    margin-top:0px;
-    font-size:3.5vw;
-}
-
 #code
 {
     white-space: pre-wrap; /* pre tag내에 word wrap */
@@ -154,6 +156,33 @@ h1, h2, h3
     padding: 0px 20px 0px;
 }
 
+.WorkName
+{
+    font-family: 'Noto Serif KR';
+}
+
+
+@media screen and (min-width: 1919px)
+{
+    body
+    {
+        top: 50%;
+        left: 50%;
+        width:1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .WorkName
+    {
+        font-family: 'Noto Serif KR';
+        padding-top:0px;
+        margin-top:0px;
+        font-size: 48px;
+    }
+}
+
 /* TABLET col2*/
 @media screen and (max-width: 1200px)
 {
@@ -165,10 +194,18 @@ h1, h2, h3
     }
 
     .work
-{
-    width: 43%;
-    padding: 0px 20px 0px;
-}
+    {
+        width: 43%;
+        padding: 0px 20px 0px;
+    }
+
+    .WorkName
+    {
+        font-family: 'Noto Serif KR';
+        padding-top:0px;
+        margin-top:0px;
+        font-size: 28px;
+    }
     
 }
 
@@ -188,6 +225,14 @@ h1, h2, h3
     {
         width: 100%;
         padding: 0px 20px 0px;
+    }
+
+    .WorkName
+    {
+        font-family: 'Noto Serif KR';
+        padding-top:0px;
+        margin-top:0px;
+        font-size: 28px;
     }
 
 }
