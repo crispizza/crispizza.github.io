@@ -9,7 +9,7 @@ html
 {
     top: 50%;
     left: 50%;
-    width:80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,6 +22,7 @@ html
 }
 
 /* Hyperlink Atrb */
+
 a:link, a:visited, a:active
 {
     color: #000;
@@ -55,6 +56,7 @@ a.work:hover
     color: black;
     text-decoration: underline;
 }
+
 
 /* Floating Navigation Location */
 #top-left-float
@@ -95,11 +97,6 @@ h1, h2, h3
     font-family: 'Noto Sans KR';
 }
 
-#code
-{
-    white-space: pre-wrap; /* pre tag내에 word wrap */
-}
-
 .round-text
 {
     font-size: 60px;
@@ -121,7 +118,6 @@ h1, h2, h3
 }
 
 /* Works page (index.html) */
-
 .work-container
 {
     align-self: center;
@@ -132,11 +128,6 @@ h1, h2, h3
 
 /* Image */
 #figure
-{
-    width: 100%;
-}
-
-#gallery
 {
     width: 100%;
 }
@@ -162,13 +153,14 @@ h1, h2, h3
 }
 
 
+/* WIDE MONITOR*/
 @media screen and (min-width: 1900px)
 {
     .wrap
     {
         top: 50%;
         left: 50%;
-        width:1600px;
+        width: 1600px;
         margin-left: auto;
         margin-right: auto;
     }

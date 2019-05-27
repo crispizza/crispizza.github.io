@@ -1,5 +1,6 @@
 /* ANIMATIONS */
-@keyframes walkInOut{
+@keyframes walkInOut
+{
     0%{
         left:-40%;
         top:30%;
@@ -10,7 +11,8 @@
         ;
     }
 }
-#catwalk{
+#catwalk
+{
     animation-name: walkInOut;
     animation-duration: 20s;
     animation-delay: 3s;
