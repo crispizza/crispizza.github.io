@@ -86,13 +86,13 @@ a.work:hover
     right: 0.5vw;
 }
 
-p
+p, ul
 {
     font-family: 'Noto Serif KR';
     text-align: justify;
 }
 
-h1, h2, h3
+h1, h2, h3, li
 {
     font-family: 'Noto Sans KR';
 }
